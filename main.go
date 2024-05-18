@@ -16,4 +16,4 @@ func main() {
 		panic(err)
 	}
 	cmd.Execute()
-}
+} // Executes the main function
