@@ -9,9 +9,9 @@ import (
 )
 
 func main() {
-	home, _ := homedir.Dir()
-	dbPath := filepath.Join(home, "tasks.db")
-	err := db.Init(dbPath)
+	home, _ := homedir.Dir()                  // Gets the homepath of the USER
+	dbPath := filepath.Join(home, "tasks.db") // 'dbPath' contains the location where the daatbase will be created
+	err := db.Init(dbPath)                    // Creates the database at 'dbPath'
 	if err != nil {
 		panic(err)
 	}
